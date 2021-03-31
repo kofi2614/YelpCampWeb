@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const mongoose = require("mongoose");
+const morgan = require("morgan");
 const methodOverride = require("method-override");
 const Campground = require("./models/campground");
 
@@ -21,6 +22,8 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+
+app.use(morgan("tiny"));
 
 // home page
 app.get("/", (req, res) => {
