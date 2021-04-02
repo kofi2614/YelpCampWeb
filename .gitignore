@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Random bash file
+reset_email.sh
