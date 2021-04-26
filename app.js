@@ -55,9 +55,15 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-//  campground router
-app.use("/campgrounds", campgrounds);
+// flash middleware
+app.use((req, res, next) => {
+  res.locals.success = req.flash("success");
+  res.locals.error = req.flash("error");
+  next();
+});
 
+//  include router
+app.use("/campgrounds", campgrounds);
 app.use("/campgrounds/:id/reviews", reviews);
 
 // middleware for error handling
