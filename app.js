@@ -1,3 +1,6 @@
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 var express = require("express"),
   http = require("http"),
   app = express(),
