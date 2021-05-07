@@ -29,13 +29,13 @@ const seedDB = async () => {
       images: [
         {
           url:
-            "https://res.cloudinary.com/dyut8ucxr/image/upload/v1620090609/YelpCamp/cb1wh3nkbhgvscu1cb5y.png",
-          filename: "YelpCamp/cb1wh3nkbhgvscu1cb5y",
+            "https://res.cloudinary.com/dyut8ucxr/image/upload/v1620097272/YelpCamp/fqhth8oo1lb0prmxllcy.jpg",
+          filename: "YelpCamp/fqhth8oo1lb0prmxllcy",
         },
         {
           url:
-            "https://res.cloudinary.com/dyut8ucxr/image/upload/v1620090609/YelpCamp/lehhqeetxbk0nihnbqc2.png",
-          filename: "YelpCamp/lehhqeetxbk0nihnbqc2",
+            "https://res.cloudinary.com/dyut8ucxr/image/upload/v1620092361/YelpCamp/eq2we4sotb6lja6vvprt.jpg",
+          filename: "YelpCamp/eq2we4sotb6lja6vvprt",
         },
       ],
       geometry: {
