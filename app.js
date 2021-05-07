@@ -1,7 +1,6 @@
-// if (process.env.NODE_ENV !== "production") {
-//   require("dotenv").config();
-// }
-require("dotenv").config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 var express = require("express"),
   http = require("http"),
   app = express(),
@@ -120,7 +119,7 @@ app.use(
         "'self'",
         "blob:",
         "data:",
-        "https://res.cloudinary.com/dyut8ucxr/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
+        `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/`, //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
         "https://images.unsplash.com/",
       ],
       fontSrc: ["'self'", ...fontSrcUrls],
